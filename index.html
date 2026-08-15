@@ -93,6 +93,7 @@
   .feat li{list-style:none; display:flex; gap:12px; align-items:flex-start; color:var(--muted); font-size:15px}
   .feat .ic{flex:none; width:26px; height:26px; border-radius:8px; display:grid; place-items:center; font-size:14px;
     background:var(--surface-2); border:1px solid var(--border); color:var(--otg-1)}
+  .locus .feat .ic{color:var(--locus-1)}
   .feat b{color:var(--fg); font-weight:600}
   .app-cta{margin-top:28px; display:flex; gap:14px; align-items:center; flex-wrap:wrap}
   .store-badge{display:inline-flex; align-items:center; gap:10px; border:1px solid var(--border-2); border-radius:12px;
@@ -196,13 +197,20 @@
           <div class="app-icon">🧭</div>
           <div>
             <h3>Locus</h3>
-            <p class="tag">Something new is on the way</p>
+            <p class="tag">Meet the people around you</p>
           </div>
           <span class="badge soon">● Coming soon</span>
         </div>
         <div class="app-body">
-          <p class="locus-note">Locus is our next app, currently in the works. We’re putting the finishing touches on it — check back soon, or get in touch to hear when it launches.</p>
+          <p class="sub" style="margin-bottom:6px">Locus helps you discover and connect with the people right around you — over a private Bluetooth mesh that works even without internet. See who’s nearby, connect when the interest is mutual, and let a little AI help you break the ice.</p>
+          <ul class="feat">
+            <li><span class="ic">📡</span><span><b>Nearby discovery</b> — find people around you over an offline Bluetooth mesh, no signal required.</span></li>
+            <li><span class="ic">💜</span><span><b>Mutual connections</b> — you only connect when the interest goes both ways.</span></li>
+            <li><span class="ic">✨</span><span><b>AI icebreakers</b> — never face a blank chat; get smart, tailored openers for every match.</span></li>
+            <li><span class="ic">🛡️</span><span><b>Private &amp; offline-first</b> — discovery happens device-to-device, and you stay anonymous by default.</span></li>
+          </ul>
           <div class="app-cta">
+            <span class="store-badge"><small>Coming soon to</small><b>Google Play</b></span>
             <a class="btn btn-ghost" href="#contact">Get notified →</a>
           </div>
         </div>
