@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>On The Go — Privacy Policy</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1c1e; --muted:#5b6066; --card:#f6f8fa;
+    --border:#e3e7eb; --accent:#0b57d0; --accent-soft:#e8f0fe;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#101316; --fg:#e6e9ec; --muted:#a4abb2; --card:#181c20;
+      --border:#2a2f34; --accent:#8ab4f8; --accent-soft:#1b2735;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
+  header{margin:8px 0 28px}
+  .badge{
+    display:inline-block; font-size:13px; font-weight:600; letter-spacing:.02em;
+    color:var(--accent); background:var(--accent-soft);
+    padding:4px 12px; border-radius:999px; margin-bottom:16px;
+  }
+  h1{font-size:30px; line-height:1.2; margin:0 0 6px}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:34px 0 10px; padding-top:8px}
+  h3{font-size:16px; margin:20px 0 6px}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  li{margin:7px 0}
+  a{color:var(--accent)}
+  strong{font-weight:650}
+  .card{
+    background:var(--card); border:1px solid var(--border);
+    border-radius:14px; padding:18px 20px; margin:18px 0;
+  }
+  .tldr li{margin:9px 0}
+  .divider{height:1px; background:var(--border); border:0; margin:32px 0}
+  footer{color:var(--muted); font-size:14px; margin-top:36px}
+  code{background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 6px; font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Privacy Policy</span>
+    <h1>On The Go</h1>
+    <p class="sub">Hands-free driving assistant · Package <code>com.magsapps.onthego</code><br>
+    Provided by Mags Apps (Sharad Yadav) · Last updated: 16 August 2026</p>
+  </header>
+
+  <div class="card tldr">
+    <strong>The short version</strong>
+    <ul>
+      <li>On The Go works almost entirely <strong>on your device</strong>.</li>
+      <li>There is <strong>no account</strong>, <strong>no ads</strong>, and <strong>no location tracking</strong>.</li>
+      <li>Your messages, contacts, and voice audio <strong>stay on your phone</strong>.</li>
+      <li>The <strong>text</strong> of a command leaves your device <strong>only if you turn on “Smart understanding”</strong> (off by default), and only to interpret that command.</li>
+      <li>We do <strong>not sell</strong> your data and keep <strong>no server-side copy</strong> of your content.</li>
+    </ul>
+  </div>
+
+  <p>This policy explains what On The Go (“the app”, “we”, “us”) accesses on your device, what — if anything — leaves your device, and the choices you have. By using the app you agree to this policy.</p>
+
+  <h2>1. What the app does</h2>
+  <p>On The Go is a voice-driven assistant for use while driving. You speak a command and the app carries it out — for example reading out recent messages, replying to a message, telling you who called, calling a contact, opening an app, or starting navigation. It is designed to keep your hands on the wheel and your eyes on the road.</p>
+
+  <h2>2. Information that stays on your device</h2>
+  <p>To do its job, the app uses the following on your device. <strong>None of this is transmitted off your device or to us:</strong></p>
+  <ul>
+    <li><strong>Microphone / voice.</strong> The app listens for commands and (if you enable it) a wake word. Speech is turned into text <strong>on your device</strong> using Android’s on-device speech recognition and an offline wake-word engine. Audio recordings are <strong>not stored and not sent anywhere</strong>.</li>
+    <li><strong>Notifications (Notification access).</strong> Used to read out your recent messages and missed calls, and to send replies through the messaging app’s own reply action. This content is held only briefly in memory to answer your request and is not stored by us or transmitted.</li>
+    <li><strong>Contacts.</strong> Read only to place a call when you say “call &lt;name&gt;”. Contacts are not uploaded or transmitted.</li>
+    <li><strong>Installed apps.</strong> The app checks which apps are installed so it can open one when you say “open &lt;app&gt;”. This list is not transmitted.</li>
+    <li><strong>Phone.</strong> Used to place the calls you ask for.</li>
+    <li><strong>Bluetooth.</strong> Used to detect when your car connects, so Drive Mode can start automatically.</li>
+  </ul>
+
+  <h2>3. Information sent off your device</h2>
+  <p>The app sends data off your device in only two situations, both described below.</p>
+
+  <h3>a) Command text — only when “Smart understanding” is on (off by default)</h3>
+  <p>“Smart understanding” is an <strong>optional</strong> setting that is <strong>turned off by default</strong>. When it is on and the app cannot understand a command entirely on your device, the <strong>text of what you said</strong> (not audio) is sent over an encrypted connection to our secure backend (Google Firebase Cloud Functions) and forwarded to <strong>Anthropic’s API</strong> to interpret the command and return the intended action.</p>
+  <ul>
+    <li>This text is used only to understand that single command and is <strong>not stored in any database by us</strong>.</li>
+    <li>Anthropic processes it under its API terms and <strong>does not use it to train its models</strong>. See the <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Anthropic Privacy Policy</a>.</li>
+    <li>If you leave Smart understanding <strong>off</strong>, no command text is sent anywhere — everything is processed on your device.</li>
+  </ul>
+
+  <h3>b) App-integrity token — for security</h3>
+  <p>So that only the genuine app can use our backend, the app sends a security token (Google <strong>Play Integrity</strong>, via <strong>Firebase App Check</strong>) to Google/Firebase. This is used for <strong>fraud prevention and security</strong> only. It is not used to identify you and is not shared with anyone else.</p>
+
+  <h2>4. What we do <em>not</em> collect</h2>
+  <ul>
+    <li>No account, sign-in, name, email address, or phone number.</li>
+    <li>No location data.</li>
+    <li>No advertising, and no advertising or analytics tracking SDKs.</li>
+    <li>We do not sell your data or share it for advertising.</li>
+  </ul>
+
+  <h2>5. Third-party services</h2>
+  <p>When Smart understanding is used, or for the security check, the following services process data on our behalf:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Cloud Functions and App Check / Play Integrity) — <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase privacy &amp; security</a>, <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</li>
+    <li><strong>Anthropic, PBC</strong> (command interpretation) — <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Anthropic Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>6. Data retention</h2>
+  <p>We do not maintain a server-side database of your content. Data used to process a command is handled transiently to serve that request and is not retained by us; any incidental operational logs are automatically deleted over time (well within 90 days). On-device data (such as recent notifications held in memory) is cleared when the app stops or you uninstall it.</p>
+
+  <h2>7. Security</h2>
+  <p>All data that leaves your device is encrypted in transit using industry-standard HTTPS/TLS.</p>
+
+  <h2>8. Your choices and controls</h2>
+  <ul>
+    <li><strong>Keep everything on-device:</strong> leave “Smart understanding” turned off. No command text will be sent for interpretation.</li>
+    <li><strong>Permissions:</strong> you can revoke microphone, contacts, notification access, phone, or Bluetooth permissions at any time in Android Settings. Related features will stop working, but the rest of the app continues to function.</li>
+    <li><strong>Removal:</strong> uninstalling the app removes it and its on-device data.</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>On The Go is intended for licensed drivers and is not directed to children. We do not knowingly collect personal information from children.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>We may update this policy from time to time. When we do, we will revise the “Last updated” date at the top of this page.</p>
+
+  <h2>11. Contact</h2>
+  <p>If you have questions about this policy or your privacy, contact us at <a href="mailto:ysharad.10@gmail.com">ysharad.10@gmail.com</a>.</p>
+
+  <hr class="divider">
+  <footer>
+    Mags Apps · Governed by the laws of India. This policy applies to the On The Go Android application (<code>com.magsapps.onthego</code>).
+  </footer>
+</div>
+</body>
+</html>
