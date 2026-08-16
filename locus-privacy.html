@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locus — Privacy Policy</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1c1e; --muted:#5b6066; --card:#f7f5fb;
+    --border:#e6e2ef; --accent:#7c3aed; --accent-soft:#f1eafe;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f0d14; --fg:#e9e6ef; --muted:#a7a2b3; --card:#181423;
+      --border:#2a2438; --accent:#b79bff; --accent-soft:#221a35;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
+  header{margin:8px 0 28px}
+  .badge{
+    display:inline-block; font-size:13px; font-weight:600; letter-spacing:.02em;
+    color:var(--accent); background:var(--accent-soft);
+    padding:4px 12px; border-radius:999px; margin-bottom:16px;
+  }
+  h1{font-size:30px; line-height:1.2; margin:0 0 6px}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:34px 0 10px; padding-top:8px}
+  h3{font-size:16px; margin:20px 0 6px}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  li{margin:7px 0}
+  a{color:var(--accent)}
+  strong{font-weight:650}
+  .card{
+    background:var(--card); border:1px solid var(--border);
+    border-radius:14px; padding:18px 20px; margin:18px 0;
+  }
+  .tldr li{margin:9px 0}
+  .divider{height:1px; background:var(--border); border:0; margin:32px 0}
+  footer{color:var(--muted); font-size:14px; margin-top:36px}
+  code{background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 6px; font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Privacy Policy</span>
+    <h1>Locus</h1>
+    <p class="sub">Discover and meet people at your event · Package <code>com.locus.app</code><br>
+    Provided by Mags Apps (Sharad Yadav) · For adults 18+ · Last updated: 16 August 2026</p>
+  </header>
+
+  <div class="card tldr">
+    <strong>The short version</strong>
+    <ul>
+      <li>Locus helps you <strong>discover and connect with people around you at events</strong> — over Bluetooth, so it works even with patchy signal.</li>
+      <li>You create a <strong>profile</strong> (a display name, your age, and a short bio). To make discovery work, <strong>that profile is shown to people near you</strong>.</li>
+      <li>Locus is for <strong>adults (18+) only</strong>.</li>
+      <li>We use <strong>Google Firebase</strong> to store your profile and <strong>Anthropic</strong> to power optional AI icebreakers.</li>
+      <li>We do <strong>not sell</strong> your data and we never share your <strong>precise GPS location</strong> with other users.</li>
+      <li>You can <strong>edit or delete your profile, block and report others, and remove your data</strong> at any time.</li>
+    </ul>
+  </div>
+
+  <p>This policy explains what information Locus (“the app”, “we”, “us”) collects, how it is used and shared, and the choices you have. Locus is a hyperlocal discovery app for meeting people at the same event or place as you. By using Locus you agree to this policy.</p>
+
+  <h2>1. What Locus does</h2>
+  <p>Locus lets you see other Locus users who are near you — for example at a conference, meetup, or event — and connect when the interest is mutual. Discovery happens primarily <strong>device-to-device over a Bluetooth mesh</strong>, so people close by can find each other. Locus is a tool for meeting people; it is not a dating service.</p>
+
+  <h2>2. The profile you create — and who can see it</h2>
+  <p>When you set up Locus, you create a profile that may include a <strong>display name, your age, and a short bio</strong> (and any similar details you choose to add). Because Locus is a discovery app, <strong>your profile is shared with other Locus users who are near you</strong> — this is the core function of the app and is how people find each other.</p>
+  <p>Your profile is also stored in our backend (Google Firebase) so it stays consistent across your sessions and devices. Please only include information in your profile that you are comfortable showing to other people nearby. You can edit or remove this information at any time in the app.</p>
+
+  <h2>3. Finding people nearby</h2>
+  <ul>
+    <li><strong>Bluetooth proximity.</strong> Locus uses Bluetooth to detect other Locus users close to you and to exchange profiles device-to-device. On Android, the system may require location permission to scan for nearby Bluetooth devices; Locus uses this to find people near you, not to track your movements.</li>
+    <li><strong>Approximate area (optional area/event chat).</strong> If you use public area or event chat, Locus uses a <strong>coarse, approximate area (around neighborhood level)</strong> to group people in the same place. Locus does <strong>not</strong> collect or share your precise GPS coordinates with other users.</li>
+  </ul>
+
+  <h2>4. Likes, matches, and messages</h2>
+  <ul>
+    <li><strong>Likes are private.</strong> When you like someone, that interest is kept private (and encrypted) until it becomes <strong>mutual</strong> — only then do you and the other person become a match and can see each other as connected.</li>
+    <li><strong>Messages.</strong> Messages you send in a chat or an event room are shared with the people or room you send them to. Mesh messages are exchanged directly between devices near you.</li>
+  </ul>
+
+  <h2>5. AI icebreakers (optional)</h2>
+  <p>If you use the AI icebreaker feature, Locus sends the relevant profile details shown on the match card (yours and your match’s) over an encrypted connection to our backend (Google Firebase) and to <strong>Anthropic’s API</strong> to generate suggested opening lines. This information is used only to create those suggestions and is <strong>not used to train Anthropic’s models</strong>. See the <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Anthropic Privacy Policy</a>.</p>
+
+  <h2>6. Your account</h2>
+  <p>Locus signs you in with an <strong>anonymous account</strong> (Google Firebase Anonymous Authentication) that links your profile to you across sessions. We do <strong>not</strong> require your email address, phone number, or a password to use Locus.</p>
+
+  <h2>7. Where your data is stored, and third-party services</h2>
+  <p>The following services process data on our behalf:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> — Anonymous Authentication, Cloud Firestore (stores your profile and related data), and Cloud Functions. See <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase privacy &amp; security</a> and the <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</li>
+    <li><strong>Anthropic, PBC</strong> — powers the optional AI icebreakers. See the <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Anthropic Privacy Policy</a>.</li>
+  </ul>
+
+  <h2>8. Data retention and deletion</h2>
+  <p>Your profile and related data are stored while you use Locus. You are in control of it:</p>
+  <ul>
+    <li>You can <strong>edit or clear your profile</strong> in the app at any time.</li>
+    <li>You can <strong>request deletion of your data</strong> by contacting us at the email below; we will delete your profile and associated data from our backend.</li>
+    <li><strong>Uninstalling</strong> Locus stops it from broadcasting your profile to nearby devices.</li>
+  </ul>
+  <p>Reports you submit about other users are retained so we can keep the community safe.</p>
+
+  <h2>9. Safety and security</h2>
+  <ul>
+    <li><strong>Block &amp; report.</strong> You can block and report other users. Blocked users are dropped from your experience, and reports are sent to us for review.</li>
+    <li><strong>Encryption.</strong> Data sent to our backend is encrypted in transit (HTTPS/TLS), and private likes are encrypted as they travel over the mesh.</li>
+  </ul>
+
+  <h2>10. What we do <em>not</em> do</h2>
+  <ul>
+    <li>We do not sell your data.</li>
+    <li>We do not share your precise GPS location with other users.</li>
+    <li>We do not show third-party ads or use advertising-tracking SDKs.</li>
+  </ul>
+
+  <h2>11. Adults only</h2>
+  <p>Locus is intended for people who are <strong>18 years of age or older</strong>. The app includes an age gate, and we do not knowingly allow anyone under 18 to use it or knowingly collect their information.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>We may update this policy from time to time. When we do, we will revise the “Last updated” date at the top of this page.</p>
+
+  <h2>13. Contact</h2>
+  <p>For questions about this policy, to request deletion of your data, or for anything else, contact us at <a href="mailto:hello@goapps.store">hello@goapps.store</a>.</p>
+
+  <hr class="divider">
+  <footer>
+    Mags Apps · Governed by the laws of India. This policy applies to the Locus Android application (<code>com.locus.app</code>).
+  </footer>
+</div>
+</body>
+</html>
