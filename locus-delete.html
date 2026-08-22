@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Locus — Delete your account and data</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1a1c1e; --muted:#5b6066; --card:#f7f5fb;
+    --border:#e6e2ef; --accent:#7c3aed; --accent-soft:#f1eafe;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0f0d14; --fg:#e9e6ef; --muted:#a7a2b3; --card:#181423;
+      --border:#2a2438; --accent:#b79bff; --accent-soft:#221a35;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
+  header{margin:8px 0 28px}
+  .badge{
+    display:inline-block; font-size:13px; font-weight:600; letter-spacing:.02em;
+    color:var(--accent); background:var(--accent-soft);
+    padding:4px 12px; border-radius:999px; margin-bottom:16px;
+  }
+  h1{font-size:30px; line-height:1.2; margin:0 0 6px}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:34px 0 10px; padding-top:8px}
+  h3{font-size:16px; margin:20px 0 6px}
+  p{margin:10px 0}
+  ul{margin:10px 0; padding-left:22px}
+  ol{margin:10px 0; padding-left:22px}
+  li{margin:7px 0}
+  a{color:var(--accent)}
+  strong{font-weight:650}
+  .card{
+    background:var(--card); border:1px solid var(--border);
+    border-radius:14px; padding:18px 20px; margin:18px 0;
+  }
+  .divider{height:1px; background:var(--border); border:0; margin:32px 0}
+  footer{color:var(--muted); font-size:14px; margin-top:36px}
+  code{background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 6px; font-size:14px}
+  table{border-collapse:collapse; width:100%; margin:14px 0; font-size:15px}
+  th,td{border:1px solid var(--border); padding:9px 11px; text-align:left; vertical-align:top}
+  th{background:var(--card); font-weight:650}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Account &amp; Data Deletion</span>
+    <h1>Locus</h1>
+    <p class="sub">Delete your Locus account and data · Package <code>com.goapps.locus</code><br>
+    Provided by Mags Apps (Sharad Yadav) · Last updated: 23 August 2026</p>
+  </header>
+
+  <div class="card">
+    <strong>In short</strong>
+    <ul>
+      <li>You can <strong>erase everything from inside the app</strong> in a few taps — no email, no waiting.</li>
+      <li>To also remove the <strong>sign-in account</strong> (Google or phone number), email us and we'll delete it within 30 days.</li>
+      <li>Your chats live on your phone. Deleting the app's data removes them permanently — we can't recover them, because we never had the keys.</li>
+    </ul>
+  </div>
+
+  <h2>Option 1 — Delete everything from inside the app</h2>
+  <p>This is the fastest route and removes both what is on your phone and what is stored in the cloud.</p>
+  <ol>
+    <li>Open <strong>Locus</strong>.</li>
+    <li>Go to the <strong>You</strong> tab (bottom right).</li>
+    <li>Tap <strong>Settings</strong>.</li>
+    <li>Tap <strong>Export or delete my data</strong>.</li>
+    <li>Tap <strong>Delete everything</strong> and confirm.</li>
+  </ol>
+  <p>The app returns to the first-run screen. This cannot be undone.</p>
+
+  <h2>Option 2 — Ask us to delete your account</h2>
+  <p>If you also want the sign-in account itself removed (the Google account or phone number you logged in with), or you no longer have the app installed:</p>
+  <ul>
+    <li>Email <strong><a href="mailto:hello@goapps.store?subject=Delete%20my%20Locus%20account">hello@goapps.store</a></strong> with the subject <strong>“Delete my Locus account”</strong>.</li>
+    <li>Send it from the email address you signed in with, or tell us the phone number you used, so we can identify the account.</li>
+    <li>We delete it within <strong>30 days</strong> and reply to confirm.</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>What is deleted, and what is kept</h2>
+  <table>
+    <tr><th>Data</th><th>What happens</th></tr>
+    <tr><td>Your profile (name, age, bio, interests, glyph)</td><td>Deleted from your phone and from our servers, immediately</td></tr>
+    <tr><td>Your connections and swipe history</td><td>Deleted from your phone, immediately</td></tr>
+    <tr><td>Your chats</td><td>Deleted from your phone, immediately. They are end-to-end encrypted, so we never held readable copies</td></tr>
+    <tr><td>Undelivered messages waiting in the relay</td><td>Encrypted-only; deleted the moment they are delivered, and removed with your account on request</td></tr>
+    <tr><td>Your chat encryption key and notification token</td><td>Deleted with your profile</td></tr>
+    <tr><td>Your sign-in account (Google / phone)</td><td>Deleted within 30 days of an email request (Option 2)</td></tr>
+    <tr><td>Safety reports made about you by other users</td><td><strong>Kept for up to 12 months</strong> so we can act on abuse, then deleted. These contain the report reason and the identifiers involved, not your chats</td></tr>
+    <tr><td>Anonymised, aggregated statistics</td><td>May be kept indefinitely; these cannot identify you</td></tr>
+  </table>
+
+  <p>Copies may persist briefly in encrypted backups after deletion and are overwritten in the normal backup cycle.</p>
+
+  <h2>A note about other people's phones</h2>
+  <p>Locus works device to device. If you chatted with someone, <strong>their copy of your messages is on their phone</strong>, and deleting your account does not remove it — just as deleting a text message does not remove it from the person you sent it to.</p>
+
+  <footer>
+    Questions? <a href="mailto:hello@goapps.store">hello@goapps.store</a> · <a href="./locus-privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
