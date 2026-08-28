@@ -87,6 +87,7 @@
     border-radius:999px; padding:5px 12px; margin-left:auto}
   .badge.soon{color:#ffd88a; background:rgba(255,190,80,.1); border:1px solid rgba(255,190,80,.3)}
   .badge.beta{color:var(--otg-1); background:rgba(34,211,238,.1); border:1px solid rgba(34,211,238,.3)}
+  .badge.live{color:#7ee7a8; background:rgba(52,211,153,.1); border:1px solid rgba(52,211,153,.32)}
   .app-body{padding:26px 34px 34px}
   .feat{display:grid; grid-template-columns:1fr 1fr; gap:16px 26px; margin:8px 0 0}
   @media(max-width:560px){.feat{grid-template-columns:1fr}}
@@ -100,6 +101,8 @@
     padding:10px 18px; font-size:14px; color:var(--fg)}
   .store-badge small{display:block; color:var(--faint); font-size:11px; line-height:1.2}
   .store-badge b{font-size:15px}
+  a.store-badge{color:inherit; text-decoration:none; transition:border-color .18s ease, transform .18s ease}
+  a.store-badge:hover{border-color:var(--locus-1); transform:translateY(-1px)}
   .divider{height:1px; background:var(--border); margin:0 34px}
 
   .locus-note{color:var(--muted); font-size:15.5px; max-width:60ch; margin:6px 0 0}
@@ -149,7 +152,7 @@
   <div class="wrap">
     <span class="pill"><span class="dot"></span> Independent app studio</span>
     <h1>Apps that keep up with <span class="grad">real life</span></h1>
-    <p class="lede">GoApps builds focused, privacy-respecting mobile apps for the moments that matter — starting with a driving assistant that lets you stay hands-free and eyes-up.</p>
+    <p class="lede">GoApps builds focused, privacy-respecting mobile apps for the moments that matter — starting with Locus, which finds the people around you without needing any internet at all.</p>
     <div class="btns">
       <a class="btn btn-primary" href="#apps">Explore our apps →</a>
       <a class="btn btn-ghost" href="#about">About the studio</a>
@@ -199,20 +202,22 @@
             <h3>Locus</h3>
             <p class="tag">Meet the people around you</p>
           </div>
-          <span class="badge soon">● Coming soon</span>
+          <span class="badge live">● Live on Google Play</span>
         </div>
         <div class="app-body">
-          <p class="sub" style="margin-bottom:6px">Locus helps you discover and connect with the people right around you — over a private Bluetooth mesh that works even without internet. See who’s nearby, connect when the interest is mutual, and let a little AI help you break the ice.</p>
+          <p class="sub" style="margin-bottom:6px">Locus shows you the people who are actually around you — over a private Bluetooth mesh that keeps working with no internet at all. See who’s nearby, connect when the interest is mutual, and let a little AI help you break the ice.</p>
           <ul class="feat">
             <li><span class="ic">📡</span><span><b>Nearby discovery</b> — find people around you over an offline Bluetooth mesh, no signal required.</span></li>
             <li><span class="ic">💜</span><span><b>Mutual connections</b> — you only connect when the interest goes both ways.</span></li>
             <li><span class="ic">✨</span><span><b>AI icebreakers</b> — never face a blank chat; get smart, tailored openers for every match.</span></li>
-            <li><span class="ic">🛡️</span><span><b>Private &amp; offline-first</b> — discovery happens device-to-device, and you stay anonymous by default.</span></li>
+            <li><span class="ic">🔐</span><span><b>Offline first, end to end encrypted</b> — chats work with no internet, and only you and them can read them.</span></li>
+            <li><span class="ic">🛡️</span><span><b>Anonymous by default</b> — no account needed, and your location is never shown to anyone.</span></li>
           </ul>
           <div class="app-cta">
-            <span class="store-badge"><small>Coming soon to</small><b>Google Play</b></span>
+            <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.goapps.locus" target="_blank" rel="noopener"><small>Get it on</small><b>Google Play</b></a>
             <a class="btn btn-ghost" href="/locus-privacy.html" target="_blank" rel="noopener">Privacy policy</a>
             <a class="btn btn-ghost" href="/locus-delete.html" target="_blank" rel="noopener">Delete account</a>
+            <a class="btn btn-ghost" href="/locus-child-safety.html" target="_blank" rel="noopener">Child safety</a>
           </div>
         </div>
       </article>
@@ -238,7 +243,7 @@
     <div class="about">
       <p class="eyebrow">About</p>
       <h2>The studio behind the apps</h2>
-      <p>GoApps is an independent app studio (operating as <b>Mags Apps</b> on Google Play) creating mobile apps for everyday life. We’re a small team that cares about craft, speed, and respecting the people who use what we build. On The Go is our first release, with Locus close behind.</p>
+      <p>GoApps is an independent app studio (operating as <b>Mags Apps</b> on Google Play) creating mobile apps for everyday life. We’re a small team that cares about craft, speed, and respecting the people who use what we build. Locus is live on Google Play, with On The Go close behind.</p>
       <p>This site is the official developer home for our apps. For anything — support, press, partnerships, or a hello — we’d love to hear from you.</p>
     </div>
   </div>
@@ -248,7 +253,7 @@
   <div class="wrap">
     <p class="eyebrow" style="color:var(--locus-1)">Contact</p>
     <h2>Get in touch</h2>
-    <p class="sub" style="margin:0 auto">Questions, feedback, or want to know when Locus launches? Drop us a line.</p>
+    <p class="sub" style="margin:0 auto">Questions, feedback, or found a bug in Locus? Drop us a line.</p>
     <a class="btn btn-primary" href="mailto:hello@goapps.store">hello@goapps.store</a>
   </div>
 </section>
@@ -262,6 +267,7 @@
       <a href="/onthego-privacy.html" target="_blank" rel="noopener">On The Go privacy policy</a>
       <a href="/locus-privacy.html" target="_blank" rel="noopener">Locus privacy policy</a>
       <a href="/locus-delete.html" target="_blank" rel="noopener">Delete Locus account</a>
+      <a href="/locus-child-safety.html" target="_blank" rel="noopener">Locus child safety</a>
       <a href="mailto:hello@goapps.store">Contact</a>
     </div>
     <div>© 2026 GoApps · Mags Apps</div>
