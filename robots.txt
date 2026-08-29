@@ -1,0 +1,8 @@
+# Explicitly allow AdMob's app-ads.txt crawler.
+# Nothing was blocking it (there was no robots.txt at all), but AdMob's
+# verification troubleshooting asks for this rule, so state it outright.
+User-agent: Google-adstxt
+Disallow:
+
+User-agent: *
+Disallow:
