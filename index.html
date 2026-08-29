@@ -26,24 +26,25 @@
 @keyframes lw-rise{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes lw-scan{0%{transform:translateY(-100%)}100%{transform:translateY(900%)}}</style>
 <style>
-.hv0:hover{background:#CF7A45;color:#180E07}
-.hv1:hover{background:#E39763}
-.hv2:hover{border-color:#45564D;background:#0E1512}
+.hv0:hover{color:#EDE7DA}
+.hv1:hover{background:#CF7A45;color:#180E07}
+.hv2:hover{background:#E39763}
 .hv3:hover{border-color:#45564D;background:#0E1512}
-.hv4:hover{background:#E39763}
-.hv5:hover{border-color:#63C39D;background:#0E1512}
-.hv6:hover{background:#E39763}
-.hv7:hover{border-color:#45564D;background:#0E1512}
-.hv8:hover{background:#E39763}
-.hv9:hover{border-color:#63C39D;background:#0E1512}
-.hv10:hover{background:#E39763}
-.hv11:hover{color:#EDE7DA}
+.hv4:hover{border-color:#45564D;background:#0E1512}
+.hv5:hover{background:#E39763}
+.hv6:hover{border-color:#63C39D;background:#0E1512}
+.hv7:hover{background:#E39763}
+.hv8:hover{border-color:#45564D;background:#0E1512}
+.hv9:hover{background:#E39763}
+.hv10:hover{border-color:#63C39D;background:#0E1512}
+.hv11:hover{background:#E39763}
 .hv12:hover{color:#EDE7DA}
 .hv13:hover{color:#EDE7DA}
 .hv14:hover{color:#EDE7DA}
 .hv15:hover{color:#EDE7DA}
 .hv16:hover{color:#EDE7DA}
 .hv17:hover{color:#EDE7DA}
+.hv18:hover{color:#EDE7DA}
 
 @keyframes lc-drift{0%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.012)}100%{transform:translateY(0) scale(1)}}
 @keyframes lc-breathe{0%,100%{opacity:.34}50%{opacity:.62}}
@@ -105,8 +106,8 @@ img,svg{max-width:100%}
 <div style="display:flex;align-items:center;gap:28px">
 <button onclick="go('home')" style="background:none;border:none;padding:0;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em;color:#8A958C" data-nav="home">THE APP</button>
 <button onclick="go('venues')" style="background:none;border:none;padding:0;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em;color:#8A958C" data-nav="venues">VENUES</button>
-<button onclick="go('privacy')" style="background:none;border:none;padding:0;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em;color:#8A958C" data-nav="privacy">PRIVACY</button>
-<button onclick="go('get')" style="border:1px solid #CF7A45;background:#1A1109;color:#EDE7DA;border-radius:999px;padding:10px 20px;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em" class="hv0">GET LOCUS</button>
+<a href="https://goapps.store/locus-privacy.html" style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em;color:#8A958C" class="hv0">PRIVACY</a>
+<button onclick="go('get')" style="border:1px solid #CF7A45;background:#1A1109;color:#EDE7DA;border-radius:999px;padding:10px 20px;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.15em" class="hv1">GET LOCUS</button>
 </div>
 </div>
 </div>
@@ -147,9 +148,9 @@ img,svg{max-width:100%}
 <p style="margin:0 auto 40px;font-size:20px;line-height:1.6;color:#9AA79F;max-width:520px;max-width:100%;text-wrap:pretty;animation:lw-rise .9s ease-out .18s both">Locus shows you who is actually in the room with you, and gets you talking. It runs between phones, so it works where nothing else does.</p>
 <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-bottom:22px;animation:lw-rise .9s ease-out .26s both">
 
-<button onclick="go('get')" style="background:#CF7A45;color:#180E07;border:none;border-radius:15px;padding:19px 32px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:600" class="hv1">Get it on Google Play</button>
+<button onclick="go('get')" style="background:#CF7A45;color:#180E07;border:none;border-radius:15px;padding:19px 32px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:600" class="hv2">Get it on Google Play</button>
 
-<button onclick="go('get')" style="background:transparent;border:1px solid #2B3A33;color:#EDE7DA;border-radius:15px;padding:18px 28px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:500" class="hv2">See the app</button>
+<button onclick="go('get')" style="background:transparent;border:1px solid #2B3A33;color:#EDE7DA;border-radius:15px;padding:18px 28px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:500" class="hv3">See the app</button>
 </div>
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.15em;color:#7C877E;animation:lw-rise .9s ease-out .32s both">ANDROID · FREE · WORKS IN AIRPLANE MODE</div>
 </div>
@@ -247,64 +248,71 @@ img,svg{max-width:100%}
 <div style="border-bottom:1px solid #16201B">
 <div style="max-width:1260px;max-width:100%;margin:0 auto;padding:100px 40px 104px">
 <div style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.22em;color:#CF7A45;margin-bottom:26px">THE WHOLE APP</div>
-<h2 style="margin:0 0 76px;font-family:Archivo,sans-serif;font-size:clamp(19px,4.44vw,56px);font-weight:600;letter-spacing:-.032em;line-height:1.036;max-width:720px;max-width:100%;text-wrap:pretty">Four screens. No feed, no algorithm, no city-wide pool.</h2>
+<h2 style="margin:0 0 64px;font-family:Archivo,sans-serif;font-size:clamp(19px,4.44vw,56px);font-weight:600;letter-spacing:-.032em;line-height:1.036;max-width:640px;max-width:100%;text-wrap:pretty">Four screens. That’s the whole app.</h2>
 
-<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px 48px;align-items:start">
+<div style="overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scrollbar-width:thin">
+<div style="position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:240px;justify-content:start;gap:34px;align-items:start;width:max-content;padding-bottom:12px">
+<div style="position:absolute;left:0;right:0;top:3px;height:1px;background:linear-gradient(90deg,rgba(207,122,69,0),#2B3A33 10%,#2B3A33 90%,rgba(207,122,69,0));pointer-events:none"></div>
 
-<div style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:center">
-<div style="position:relative;width:190px;height:411px;flex:none;animation:lw-float 10s ease-in-out infinite">
-<div style="position:relative;width:412px;max-width:100%;height:892px;transform:scale(0.461);transform-origin:0 0">
+<div style="display:flex;flex-direction:column;margin-top:0px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+<span style="width:7px;height:7px;border-radius:50%;background:#CF7A45;flex:none"></span>
+<span style="font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.16em;color:#8A958C;white-space:nowrap">01 · RADAR</span>
+</div>
+<div style="position:relative;width:240px;height:520px;overflow:hidden;border-radius:22px;border:1px solid #1F2A25;background:#080C0A;box-shadow:0 34px 70px -34px rgba(0,0,0,.9);animation:lw-float 10s ease-in-out 0s infinite">
+<div style="position:absolute;top:0;left:0;width:412px;max-width:100%;height:892px;transform:scale(0.5825);transform-origin:0 0">
 <img class="appshot" src="locus-shot-radar.png" width="412" height="892" loading="eager" fetchpriority="auto" decoding="async" alt="Locus radar: everyone in Bluetooth range" style="display:block;width:412px;max-width:100%;height:892px;object-fit:cover">
 <div style="position:absolute;left:206px;top:747px;width:64px;height:64px;border-radius:50%;border:1.6px solid #CF7A45;animation:lw-ping 3.4s ease-out infinite;pointer-events:none"></div>
 <div style="position:absolute;left:206px;top:747px;width:64px;height:64px;border-radius:50%;border:1.6px solid #CF7A45;animation:lw-ping 3.4s ease-out 1.7s infinite;pointer-events:none"></div>
 </div>
 </div>
-<div>
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.2em;color:#63C39D;margin-bottom:16px">01 · RADAR</div>
-<div style="font-family:Archivo,sans-serif;font-size:29px;font-weight:600;letter-spacing:-.025em;line-height:1.172;margin-bottom:14px;text-wrap:pretty">See the room, not a feed.</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Everyone in range on a distance band: who's within arm's reach, who's across the room, who's about to walk out of range. Tap anyone to read their card.</div>
-</div>
+<div style="font-family:Archivo,sans-serif;font-size:21px;font-weight:600;letter-spacing:-.022em;line-height:1.238;margin:22px 0 8px;text-wrap:pretty">See the room, not a feed.</div>
+<div style="font-size:15px;line-height:1.6;color:#8A958C;text-wrap:pretty">Everyone nearby, arranged by how close they are. Tap anyone to read their card.</div>
 </div>
 
-<div style="display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:26px;align-items:center">
-<div style="text-align:right">
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.2em;color:#63C39D;margin-bottom:16px">02 · DISCOVER</div>
-<div style="font-family:Archivo,sans-serif;font-size:29px;font-weight:600;letter-spacing:-.025em;line-height:1.172;margin-bottom:14px;text-wrap:pretty">Swipe people who are actually here.</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Not a city, not last week. The people in radio range right now. Swipe to connect; if they do too, you both find out. Nobody else ever does.</div>
+<div style="display:flex;flex-direction:column;margin-top:54px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+<span style="width:7px;height:7px;border-radius:50%;background:#CF7A45;flex:none"></span>
+<span style="font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.16em;color:#8A958C;white-space:nowrap">02 · DISCOVER</span>
 </div>
-<div style="width:190px;height:411px;overflow:hidden;flex:none;animation:lw-float 11s ease-in-out .9s infinite">
-<div style="width:412px;max-width:100%;height:892px;transform:scale(0.461);transform-origin:0 0">
+<div style="position:relative;width:240px;height:520px;overflow:hidden;border-radius:22px;border:1px solid #1F2A25;background:#080C0A;box-shadow:0 34px 70px -34px rgba(0,0,0,.9);animation:lw-float 11s ease-in-out 0.9s infinite">
+<div style="position:absolute;top:0;left:0;width:412px;max-width:100%;height:892px;transform:scale(0.5825);transform-origin:0 0">
 <img class="appshot" src="locus-shot-cards.png" width="412" height="892" loading="eager" fetchpriority="auto" decoding="async" alt="Locus cards: one nearby person at a time" style="display:block;width:412px;max-width:100%;height:892px;object-fit:cover">
 </div>
 </div>
+<div style="font-family:Archivo,sans-serif;font-size:21px;font-weight:600;letter-spacing:-.022em;line-height:1.238;margin:22px 0 8px;text-wrap:pretty">People who are actually here.</div>
+<div style="font-size:15px;line-height:1.6;color:#8A958C;text-wrap:pretty">Not a city, not last week. Swipe to connect; if they do too, you both find out.</div>
 </div>
 
-<div style="display:grid;grid-template-columns:190px minmax(0,1fr);gap:26px;align-items:center">
-<div style="width:190px;height:411px;overflow:hidden;flex:none;animation:lw-float 12s ease-in-out 1.7s infinite">
-<div style="width:412px;max-width:100%;height:892px;transform:scale(0.461);transform-origin:0 0">
+<div style="display:flex;flex-direction:column;margin-top:18px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+<span style="width:7px;height:7px;border-radius:50%;background:#CF7A45;flex:none"></span>
+<span style="font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.16em;color:#8A958C;white-space:nowrap">03 · CHATS</span>
+</div>
+<div style="position:relative;width:240px;height:520px;overflow:hidden;border-radius:22px;border:1px solid #1F2A25;background:#080C0A;box-shadow:0 34px 70px -34px rgba(0,0,0,.9);animation:lw-float 12s ease-in-out 1.7s infinite">
+<div style="position:absolute;top:0;left:0;width:412px;max-width:100%;height:892px;transform:scale(0.5825);transform-origin:0 0">
 <img class="appshot" src="locus-shot-chats.png" width="412" height="892" loading="eager" fetchpriority="auto" decoding="async" alt="Locus chats: encrypted one to one" style="display:block;width:412px;max-width:100%;height:892px;object-fit:cover">
 </div>
 </div>
-<div>
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.2em;color:#63C39D;margin-bottom:16px">03 · CHATS</div>
-<div style="font-family:Archivo,sans-serif;font-size:29px;font-weight:600;letter-spacing:-.025em;line-height:1.172;margin-bottom:14px;text-wrap:pretty">It stays between the two phones.</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Chats are encrypted between the two phones. Walk out the door and the thread comes with you.</div>
-</div>
+<div style="font-family:Archivo,sans-serif;font-size:21px;font-weight:600;letter-spacing:-.022em;line-height:1.238;margin:22px 0 8px;text-wrap:pretty">It stays between two phones.</div>
+<div style="font-size:15px;line-height:1.6;color:#8A958C;text-wrap:pretty">Encrypted between the two of you. Walk out the door and the thread comes with you.</div>
 </div>
 
-<div style="display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:26px;align-items:center">
-<div style="text-align:right">
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.2em;color:#63C39D;margin-bottom:16px">04 · ROOM</div>
-<div style="font-family:Archivo,sans-serif;font-size:29px;font-weight:600;letter-spacing:-.025em;line-height:1.172;margin-bottom:14px;text-wrap:pretty">One open channel for the whole venue.</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Anyone nearby can post and everyone nearby sees it. Set times, lost phones, who's outside, last call.</div>
+<div style="display:flex;flex-direction:column;margin-top:72px">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+<span style="width:7px;height:7px;border-radius:50%;background:#CF7A45;flex:none"></span>
+<span style="font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.16em;color:#8A958C;white-space:nowrap">04 · ROOM</span>
 </div>
-<div style="width:190px;height:411px;overflow:hidden;flex:none;animation:lw-float 10.5s ease-in-out 2.4s infinite">
-<div style="width:412px;max-width:100%;height:892px;transform:scale(0.461);transform-origin:0 0">
+<div style="position:relative;width:240px;height:520px;overflow:hidden;border-radius:22px;border:1px solid #1F2A25;background:#080C0A;box-shadow:0 34px 70px -34px rgba(0,0,0,.9);animation:lw-float 10.5s ease-in-out 2.4s infinite">
+<div style="position:absolute;top:0;left:0;width:412px;max-width:100%;height:892px;transform:scale(0.5825);transform-origin:0 0">
 <img class="appshot" src="locus-shot-room.png" width="412" height="892" loading="eager" fetchpriority="auto" decoding="async" alt="Locus Room: one channel for everyone in range" style="display:block;width:412px;max-width:100%;height:892px;object-fit:cover">
 </div>
 </div>
+<div style="font-family:Archivo,sans-serif;font-size:21px;font-weight:600;letter-spacing:-.022em;line-height:1.238;margin:22px 0 8px;text-wrap:pretty">One channel for the whole venue.</div>
+<div style="font-size:15px;line-height:1.6;color:#8A958C;text-wrap:pretty">Anyone nearby can post, everyone nearby sees it. Set times, lost phones, last call.</div>
 </div>
-
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -321,7 +329,7 @@ img,svg{max-width:100%}
 <div style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.22em;color:#63C39D;margin-bottom:34px">PRIVACY</div>
 <div style="font-family:Archivo,sans-serif;font-size:clamp(19px,3.49vw,44px);font-weight:500;letter-spacing:-.028em;line-height:1.318;color:#6E7D74;max-width:1100px;max-width:100%;text-wrap:pretty">No account. <span style="color:#EDE7DA;font-weight:600">Nothing to steal.</span> No location, ever. The only thing anyone sees is <span style="color:#EDE7DA;font-weight:600">the card you wrote yourself</span>.</div>
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:26px;margin-top:44px;padding-top:32px;border-top:1px solid #222C27">
-<button onclick="go('privacy')" style="background:transparent;border:1px solid #2B3A33;color:#EDE7DA;border-radius:13px;padding:14px 24px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px" class="hv3">Every piece of data, and who sees it</button>
+<a href="https://goapps.store/locus-privacy.html" style="border:1px solid #2B3A33;color:#EDE7DA;border-radius:13px;padding:14px 24px;font-family:Geist,sans-serif;font-size:16px" class="hv4">Read the privacy policy</a>
 <span style="font-size:15.5px;line-height:25px;color:#8A958C;max-width:520px;max-width:100%">One honest exception: your card is public by design. Anyone nearby can read it, which is the point, so put on it only what you'd say out loud in the room.</span>
 </div>
 </div>
@@ -339,16 +347,16 @@ img,svg{max-width:100%}
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.18em;color:#CF7A45;margin-bottom:20px">FOR VENUES &amp; ORGANIZERS</div>
 <div style="font-family:Archivo,sans-serif;font-size:clamp(19px,2.7vw,34px);font-weight:600;letter-spacing:-.028em;line-height:1.176;margin-bottom:16px;text-wrap:pretty">Put one sheet on the door and the room does the rest.</div>
 <div style="font-size:16.5px;line-height:27px;color:#9AA79F;margin-bottom:30px;flex:1">No integration, no fee, no guest data for you to hold. Locus runs between your crowd's phones and keeps running when your Wi-Fi gives up.</div>
-<button onclick="go('venues')" style="align-self:flex-start;background:#CF7A45;color:#180E07;border:none;border-radius:13px;padding:15px 26px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:600" class="hv4">See the venue kit</button>
+<button onclick="go('venues')" style="align-self:flex-start;background:#CF7A45;color:#180E07;border:none;border-radius:13px;padding:15px 26px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:600" class="hv5">See the venue kit</button>
 </div>
 <div style="position:relative;border:1px solid #222C27;border-radius:22px;background:#0C1210;padding:40px;display:flex;flex-direction:column;overflow:hidden">
 <div style="position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,rgba(99,195,157,0),#63C39D,rgba(99,195,157,0));animation:lw-scan 9s linear infinite;pointer-events:none"></div>
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.18em;color:#63C39D;margin-bottom:20px">PLATFORMS</div>
 <div style="font-family:Archivo,sans-serif;font-size:clamp(19px,2.7vw,34px);font-weight:600;letter-spacing:-.028em;line-height:1.176;margin-bottom:16px;text-wrap:pretty">Android now. iOS is in build.</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F;margin-bottom:30px;flex:1">The mesh is cross-platform by design, so an iPhone in the room will relay for Android phones and back. Leave an email and we'll tell you when the iOS build is out.</div>
+<div style="font-size:16.5px;line-height:27px;color:#9AA79F;margin-bottom:30px;flex:1">When it lands, iPhones and Android phones will find each other in the same room. Leave an email and we'll tell you once.</div>
 <div style="display:flex;gap:10px">
 <input placeholder="Email" style="flex:1;min-width:0;background:#0A100E;border:1px solid #2B3A33;border-radius:13px;padding:15px 18px;color:#EDE7DA;font-family:Geist,sans-serif;font-size:16px;outline:none">
-<button onclick="sendIos(this)" style="background:transparent;border:1px solid #45564D;color:#EDE7DA;border-radius:13px;padding:15px 22px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:500;white-space:nowrap" class="hv5">Notify me</button>
+<button onclick="sendIos(this)" style="background:transparent;border:1px solid #45564D;color:#EDE7DA;border-radius:13px;padding:15px 22px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:500;white-space:nowrap" class="hv6">Notify me</button>
 </div>
 </div>
 </div>
@@ -377,8 +385,8 @@ img,svg{max-width:100%}
 <h2 style="margin:0 0 24px;font-family:Archivo,sans-serif;font-variation-settings:'wdth' 104;font-size:clamp(27px,6.35vw,80px);font-weight:700;letter-spacing:-.04em;line-height:0.975;text-wrap:pretty">Go out. See who's there.</h2>
 <p style="margin:0 auto 40px;font-size:19px;line-height:1.579;color:#9AA79F;max-width:460px;max-width:100%">Android, free, no account. Two minutes from install to a conversation.</p>
 <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-<button onclick="go('get')" style="background:#CF7A45;color:#180E07;border:none;border-radius:15px;padding:19px 36px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:600" class="hv6">Get Locus</button>
-<button onclick="go('venues')" style="background:transparent;border:1px solid #2B3A33;color:#EDE7DA;border-radius:15px;padding:18px 32px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px" class="hv7">I run a venue</button>
+<button onclick="go('get')" style="background:#CF7A45;color:#180E07;border:none;border-radius:15px;padding:19px 36px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px;font-weight:600" class="hv7">Get Locus</button>
+<button onclick="go('venues')" style="background:transparent;border:1px solid #2B3A33;color:#EDE7DA;border-radius:15px;padding:18px 32px;cursor:pointer;font-family:Geist,sans-serif;font-size:17px" class="hv8">I run a venue</button>
 </div>
 </div>
 </div>
@@ -400,12 +408,12 @@ img,svg{max-width:100%}
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#CF7A45;margin-bottom:16px">RECOMMENDED</div>
 <div style="font-family:Archivo,sans-serif;font-size:30px;font-weight:600;letter-spacing:-.025em;margin-bottom:14px">Google Play</div>
 <div style="font-size:16.5px;line-height:27px;color:#C4B9A8;margin-bottom:28px;flex:1">Automatic updates, and the build is signed and verified by Google Play. Android 8.0 or newer.</div>
-<a href="https://play.google.com/store/apps/details?id=com.goapps.locus" style="display:flex;align-items:center;justify-content:center;background:#CF7A45;color:#180E07;border-radius:14px;padding:17px;font-size:16.5px;font-weight:600" class="hv8">Get it on Google Play</a>
+<a href="https://play.google.com/store/apps/details?id=com.goapps.locus" style="display:flex;align-items:center;justify-content:center;background:#CF7A45;color:#180E07;border-radius:14px;padding:17px;font-size:16.5px;font-weight:600" class="hv9">Get it on Google Play</a>
 </div>
 <div style="border:1px solid #222C27;border-radius:20px;background:#0C1210;padding:34px;display:flex;flex-direction:column">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#7C877E;margin-bottom:16px">IPHONE</div>
 <div style="font-family:Archivo,sans-serif;font-size:30px;font-weight:600;letter-spacing:-.025em;margin-bottom:14px">Coming soon</div>
-<div style="font-size:16.5px;line-height:27px;color:#C4B9A8;margin-bottom:28px;flex:1">Locus is Android for now. iOS is in build, and it will work with the Android phones already in the room.</div>
+<div style="font-size:16.5px;line-height:27px;color:#C4B9A8;margin-bottom:28px;flex:1">Locus is Android for now. iOS is in build, and it will work with the phones already in the room.</div>
 <div style="align-self:flex-start;font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:#8A958C;border:1px dashed #2B3A33;border-radius:999px;padding:10px 16px">IOS COMING</div>
 </div>
 </div>
@@ -414,11 +422,11 @@ img,svg{max-width:100%}
 <div style="position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,rgba(99,195,157,0),#63C39D,rgba(99,195,157,0));animation:lw-scan 9s linear infinite;pointer-events:none"></div>
 <div>
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#63C39D;margin-bottom:12px">IPHONE · IN BUILD</div>
-<div style="font-size:16.5px;line-height:27px;color:#C4B9A8;max-width:620px;max-width:100%">The iOS app isn't out yet. The mesh is cross-platform, so when it lands an iPhone will relay for the Android phones around it and back again. Leave an email and we'll tell you once.</div>
+<div style="font-size:16.5px;line-height:27px;color:#C4B9A8;max-width:620px;max-width:100%">The iOS app isn't out yet. When it lands, iPhones and Android phones will find each other in the same room. Leave an email and we'll tell you once.</div>
 </div>
 <div style="display:flex;gap:10px">
 <input placeholder="Email" style="width:240px;background:#0A100E;border:1px solid #2B3A33;border-radius:13px;padding:15px 18px;color:#EDE7DA;font-family:Geist,sans-serif;font-size:16px;outline:none">
-<button onclick="sendIos(this)" style="background:transparent;border:1px solid #45564D;color:#EDE7DA;border-radius:13px;padding:15px 22px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:500;white-space:nowrap" class="hv9">Notify me</button>
+<button onclick="sendIos(this)" style="background:transparent;border:1px solid #45564D;color:#EDE7DA;border-radius:13px;padding:15px 22px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:500;white-space:nowrap" class="hv10">Notify me</button>
 </div>
 </div>
 
@@ -456,7 +464,7 @@ img,svg{max-width:100%}
 </div>
 <div>
 <div style="font-family:Archivo,sans-serif;font-size:20px;font-weight:600;margin-bottom:10px">Can someone track me with this?</div>
-<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Your card is visible to anyone in radio range while you're broadcasting. That's the point, and it's the only thing that is. No coordinates, no history, and you can go dark instantly.</div>
+<div style="font-size:16.5px;line-height:27px;color:#9AA79F">Your card is visible to people near you while Locus is on. That's the point, and it's the only thing that is. No location, no history, and you can go dark instantly.</div>
 </div>
 </div>
 </div>
@@ -476,7 +484,7 @@ img,svg{max-width:100%}
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:80px">
 <div style="border:1px solid #222C27;border-radius:18px;padding:30px;background:#0C1210">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#63C39D;margin-bottom:16px">WORKS WHEN WI-FI DOESN'T</div>
-<div style="font-size:16.5px;line-height:27px;color:#C4B9A8">Basements, fields, sold-out arenas with saturated cells. The mesh never touches your network.</div>
+<div style="font-size:16.5px;line-height:27px;color:#C4B9A8">Basements, fields, sold-out arenas. Locus never touches your network.</div>
 </div>
 <div style="border:1px solid #222C27;border-radius:18px;padding:30px;background:#0C1210">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#63C39D;margin-bottom:16px">NO GUEST DATA</div>
@@ -484,7 +492,7 @@ img,svg{max-width:100%}
 </div>
 <div style="border:1px solid #222C27;border-radius:18px;padding:30px;background:#0C1210">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#63C39D;margin-bottom:16px">A ROOM THAT TALKS</div>
-<div style="font-size:16.5px;line-height:27px;color:#C4B9A8">The Room channel is yours to post in: set times, lost phones, last call.</div>
+<div style="font-size:16.5px;line-height:27px;color:#C4B9A8">The Room is yours to post in: set times, lost phones, last call.</div>
 </div>
 </div>
 
@@ -506,119 +514,21 @@ img,svg{max-width:100%}
 <input placeholder="Email" style="background:#0C1210;border:1px solid #2B3A33;border-radius:12px;padding:15px 18px;color:#EDE7DA;font-family:Geist,sans-serif;font-size:16px;outline:none">
 <input placeholder="Head count" style="background:#0C1210;border:1px solid #2B3A33;border-radius:12px;padding:15px 18px;color:#EDE7DA;font-family:Geist,sans-serif;font-size:16px;outline:none">
 </div>
-<button onclick="sendVenue(this)" style="width:100%;background:#CF7A45;color:#180E07;border:none;border-radius:13px;padding:16px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:600" class="hv10">Request the kit</button>
+<button onclick="sendVenue(this)" style="width:100%;background:#CF7A45;color:#180E07;border:none;border-radius:13px;padding:16px;cursor:pointer;font-family:Geist,sans-serif;font-size:16px;font-weight:600" class="hv11">Request the kit</button>
 </div>
 </div>
 
 <div style="border-top:1px solid #16201B;padding-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center">
 <div>
 <h2 style="margin:0 0 20px;font-family:Archivo,sans-serif;font-size:clamp(19px,2.7vw,34px);font-weight:600;letter-spacing:-.028em;line-height:1.176;text-wrap:pretty">A cold room is the only way this fails.</h2>
-<p style="margin:0;font-size:17px;line-height:1.647;color:#9AA79F">Locus needs two people in range, not two million users. The door sheet exists because that's the cheapest way from zero to two, and Locus can install itself over Bluetooth from a phone that already has it, with no internet at all.</p>
+<p style="margin:0;font-size:17px;line-height:1.647;color:#9AA79F">Locus needs two people in the room, not two million users. The door sheet exists because that is the cheapest way from zero to two.</p>
 </div>
 <div style="border:1px solid #222C27;border-radius:18px;background:#0C1210;overflow:hidden">
-<div style="padding:16px 22px;border-bottom:1px solid #1A2320;font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#7C877E">SPREAD ROUTES, NO INTERNET NEEDED</div>
+<div style="padding:16px 22px;border-bottom:1px solid #1A2320;font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#7C877E">HOW PEOPLE FIND IT</div>
 <div style="display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 22px;border-bottom:1px solid #1A2320;align-items:center"><span style="font-size:15px;color:#C4B9A8">Beam the app over Bluetooth</span><span style="font-family:'Azeret Mono',monospace;font-size:10.5px;color:#63C39D">OFFLINE</span></div>
 <div style="display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 22px;border-bottom:1px solid #1A2320;align-items:center"><span style="font-size:15px;color:#C4B9A8">QR that carries the installer</span><span style="font-family:'Azeret Mono',monospace;font-size:10.5px;color:#63C39D">OFFLINE</span></div>
 <div style="display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 22px;border-bottom:1px solid #1A2320;align-items:center"><span style="font-size:15px;color:#C4B9A8">Room code, posted anywhere</span><span style="font-family:'Azeret Mono',monospace;font-size:10.5px;color:#7C877E">ONLINE</span></div>
-<div style="display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 22px;align-items:center"><span style="font-size:15px;color:#C4B9A8">Wake the room, nudge phones that already have it</span><span style="font-family:'Azeret Mono',monospace;font-size:10.5px;color:#63C39D">OFFLINE</span></div>
-</div>
-</div>
-</div>
-
-</section>
-
-
-
-<section class="pg" data-page="privacy">
-
-<div style="max-width:1260px;max-width:100%;margin:0 auto;padding:88px 40px 112px">
-<div style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.22em;color:#63C39D;margin-bottom:22px">PRIVACY POLICY · LAST UPDATED AUGUST 15, 2026</div>
-<h1 style="margin:0 0 28px;font-family:Archivo,sans-serif;font-variation-settings:'wdth' 106;font-size:clamp(21px,4.92vw,62px);font-weight:700;letter-spacing:-.032em;line-height:1.032;max-width:820px;max-width:100%;text-wrap:pretty">Exactly what data exists, where it goes, and who can see it.</h1>
-<p style="margin:0 0 56px;font-size:18px;line-height:1.667;color:#9AA79F;max-width:660px;max-width:100%">Locus helps you discover, connect, and chat with people around you — primarily over a local Bluetooth mesh network, with an optional online layer.</p>
-
-<div style="border:1px solid #222C27;border-radius:20px;overflow:hidden;margin-bottom:72px">
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:16px 26px;background:#0C1210;border-bottom:1px solid #222C27;font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.16em;color:#8A958C"><span>WHAT</span><span>WHERE IT LIVES</span><span>WHO CAN SEE IT</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;border-bottom:1px solid #1A2320;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Your identity key</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">Your phone. Nowhere else.</span><span style="font-size:15px;line-height:1.533;color:#63C39D">Nobody, ever.</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;border-bottom:1px solid #1A2320;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Your card</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">Broadcast in radio range, plus our backend when you're online.</span><span style="font-size:15px;line-height:1.533;color:#C4B9A8">Anyone nearby running Locus. Public by design.</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;border-bottom:1px solid #1A2320;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Connect signals</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">The two phones involved.</span><span style="font-size:15px;line-height:1.533;color:#63C39D">Only the two of you.</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;border-bottom:1px solid #1A2320;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Private chats</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">The two phones involved, encrypted in transit.</span><span style="font-size:15px;line-height:1.533;color:#63C39D">Only the two of you. We cannot read them.</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;border-bottom:1px solid #1A2320;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Room messages</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">The mesh, while you're in it.</span><span style="font-size:15px;line-height:1.533;color:#C4B9A8">Everyone in range.</span></div>
-<div style="display:grid;grid-template-columns:1fr 1.1fr 1.2fr;gap:24px;padding:20px 26px;align-items:baseline"><span style="font-size:15.5px;color:#EDE7DA">Your location</span><span style="font-size:15px;line-height:1.533;color:#9AA79F">Nowhere. Never recorded or transmitted.</span><span style="font-size:15px;line-height:1.533;color:#63C39D">Nobody.</span></div>
-</div>
-
-<div style="display:grid;grid-template-columns:230px 1fr;gap:56px;align-items:start">
-<div style="position:sticky;top:106px;display:flex;flex-direction:column;gap:12px;font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#8A958C;border-left:1px solid #222C27;padding-left:18px">
-<span>YOUR IDENTITY</span><span>YOUR CARD</span><span>SIGNALS &amp; CHATS</span><span>OUR BACKEND</span><span>PERMISSIONS</span><span>SAFETY</span><span>DELETION</span>
-</div>
-<div style="max-width:700px;max-width:100%">
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Your identity</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Locus has no accounts, logins, emails, or phone numbers. Your identity is a cryptographic key pair generated on your device on first launch. Your public identity is a fingerprint of that key. Uninstalling the app destroys the key; there is no way for us (or anyone) to recover it.</p>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Your card</h3>
-<p style="margin:0 0 20px;font-size:17px;line-height:1.706;color:#C4B9A8">Your card — the name, age (optional), emoji, one-liner, vibes, and intent you choose — is written by you and is <span style="color:#EDE7DA;font-weight:600">public by design</span>:</p>
-<div style="border-left:1px solid #CF7A45;padding:4px 0 4px 20px;display:flex;flex-direction:column;gap:16px">
-<p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8"><span style="color:#EDE7DA;font-weight:600">Over Bluetooth</span>, your card is broadcast unencrypted to Locus users in radio range (and relayed a few hops further by their devices). Anyone nearby running compatible software can see it. Only put on your card what you'd say out loud in the room.</p>
-<p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8"><span style="color:#EDE7DA;font-weight:600">Online</span>, if your device has internet access, your card and a last-seen timestamp are also uploaded to our backend (Google Firebase, see below). This happens automatically; the app is fully functional without it.</p>
-</div>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Connect signals and chats</h3>
-<div style="display:flex;flex-direction:column;gap:14px">
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">“Connect” (like) signals are sent <span style="color:#EDE7DA;font-weight:600">end-to-end encrypted</span> (Noise protocol) directly to the person you choose. We never see them; no server ever sees them. Who liked whom exists only on the two devices involved.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Matches are computed locally on your device and stored only there.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Private chats are end-to-end encrypted device-to-device over the mesh. We cannot read them.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Public “Room” messages are visible to everyone in mesh range, like speaking in a shared space.</p>
-</div>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">What our backend stores</h3>
-<p style="margin:0 0 20px;font-size:17px;line-height:1.706;color:#C4B9A8">When internet is available, we store:</p>
-<div style="border:1px solid #222C27;border-radius:14px;overflow:hidden;margin-bottom:20px">
-<div style="padding:14px 20px;border-bottom:1px solid #1A2320;font-size:15.5px;color:#C4B9A8">Your public card (name, optional age, emoji, one-liner, vibes, intent)</div>
-<div style="padding:14px 20px;border-bottom:1px solid #1A2320;font-size:15.5px;color:#C4B9A8">A last-seen timestamp</div>
-<div style="padding:14px 20px;border-bottom:1px solid #1A2320;font-size:15.5px;color:#C4B9A8">An anonymous authentication ID that proves ownership of your card</div>
-<div style="padding:14px 20px;font-size:15.5px;color:#C4B9A8">Reports you file about other users (see Safety)</div>
-</div>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">We store <span style="color:#EDE7DA;font-weight:600">no</span> location, contacts, phone number, email, message content, likes, or matches. Firebase (Google LLC) processes this data on our behalf; see Google's privacy documentation for their infrastructure practices.</p>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Location and Bluetooth permissions</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Android requires location permission for Bluetooth scanning. Locus uses it only to operate the local radio. <span style="color:#EDE7DA;font-weight:600">Your location is never recorded, stored, or transmitted</span> — not to us, not to other users. Proximity is implicit (radio range), never coordinates.</p>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Safety</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You can block and report any person from their card or your connections list. Blocking is immediate and local. Reports (the reported card and fingerprint) are sent to us for review when internet is available.</p>
-</div>
-
-<div style="margin-bottom:52px">
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Data deletion</h3>
-<div style="display:flex;flex-direction:column;gap:14px">
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Local data (your key, card, matches, chats): delete by uninstalling the app or using in-app data wipe.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Backend data: to have your backend card and any related data deleted, contact us at the address below with your fingerprint. We will delete it within 30 days of a verified request.</p>
-</div>
-</div>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:52px">
-<div style="border:1px solid #222C27;border-radius:16px;padding:24px;background:#0C1210">
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#8A958C;margin-bottom:12px">CHILDREN</div>
-<div style="font-size:16px;line-height:1.625;color:#C4B9A8">Locus is for adults. You must be 18 or older to use it.</div>
-</div>
-<div style="border:1px solid #222C27;border-radius:16px;padding:24px;background:#0C1210">
-<div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#8A958C;margin-bottom:12px">CHANGES</div>
-<div style="font-size:16px;line-height:1.625;color:#C4B9A8">We will update this policy when the app's data practices change and note the date above.</div>
-</div>
-</div>
-
-<div style="border-top:1px solid #222C27;padding-top:28px;font-size:16px;line-height:1.625;color:#9AA79F">Contact: <a href="mailto:hello@goapps.store">hello@goapps.store</a></div>
-
+<div style="display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 22px;align-items:center"><span style="font-size:15px;color:#C4B9A8">Wake the room, nudge the phones that already have it</span><span style="font-family:'Azeret Mono',monospace;font-size:10.5px;color:#63C39D">OFFLINE</span></div>
 </div>
 </div>
 </div>
@@ -631,7 +541,7 @@ img,svg{max-width:100%}
 
 <div style="max-width:1260px;max-width:100%;margin:0 auto;padding:88px 40px 112px">
 <div style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.22em;color:#CF7A45;margin-bottom:22px">TERMS OF USE · LAST UPDATED AUGUST 15, 2026</div>
-<h1 style="margin:0 0 28px;font-family:Archivo,sans-serif;font-variation-settings:'wdth' 106;font-size:clamp(21px,4.92vw,62px);font-weight:700;letter-spacing:-.032em;line-height:1.032;max-width:820px;max-width:100%;text-wrap:pretty">The short version, and then the whole thing.</h1>
+<h1 style="margin:0 0 28px;font-family:Archivo,sans-serif;font-variation-settings:'wdth' 106;font-size:clamp(21px,4.92vw,62px);font-weight:700;letter-spacing:-.032em;line-height:1.032;max-width:820px;max-width:100%;text-wrap:pretty">The rules, in plain words.</h1>
 <p style="margin:0 0 48px;font-size:18px;line-height:1.667;color:#9AA79F;max-width:660px;max-width:100%">By installing or using Locus you agree to these terms. If you don't, uninstall the app; there is no account for us to close.</p>
 
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:72px">
@@ -641,7 +551,7 @@ img,svg{max-width:100%}
 </div>
 <div style="border:1px solid #222C27;border-radius:18px;padding:28px;background:#0C1210">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#CF7A45;margin-bottom:14px">YOUR CARD, YOUR WORDS</div>
-<div style="font-size:16px;line-height:1.625;color:#C4B9A8">Everything you broadcast is yours and public. You are responsible for it.</div>
+<div style="font-size:16px;line-height:1.625;color:#C4B9A8">Everything you put on your card is yours and public. You are responsible for it.</div>
 </div>
 <div style="border:1px solid #222C27;border-radius:18px;padding:28px;background:#0C1210">
 <div style="font-family:'Azeret Mono',monospace;font-size:10.5px;letter-spacing:.16em;color:#CF7A45;margin-bottom:14px">MEETING PEOPLE IS ON YOU</div>
@@ -652,30 +562,30 @@ img,svg{max-width:100%}
 <div style="max-width:700px;max-width:100%;display:flex;flex-direction:column;gap:52px">
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">What Locus is</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Locus is an app for discovering and talking to people in radio range of you, running primarily over a local Bluetooth mesh with an optional online layer. There are no accounts. Your identity is a key on your device. We provide the software; the network is the phones around you.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Locus is an app for finding and talking to people who are near you. There are no accounts. We provide the app; the people are whoever is in the room.</p>
 </div>
 
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Eligibility</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You must be 18 or older and legally able to enter this agreement. You are responsible for using Locus in line with the laws that apply to you, including local rules on radio use and recording.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You must be 18 or older and legally able to enter this agreement. You are responsible for using Locus in line with the laws that apply to you.</p>
 </div>
 
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">What you broadcast</h3>
-<p style="margin:0 0 20px;font-size:17px;line-height:1.706;color:#C4B9A8">Your card is public by design and is broadcast unencrypted to anyone in range. You own what you write and you are responsible for it. Do not put anything on your card you would not say out loud in the room.</p>
+<p style="margin:0 0 20px;font-size:17px;line-height:1.706;color:#C4B9A8">Your card is public. Anyone near you can read it. You own what you write and you are responsible for it, so do not put anything on it you would not say out loud in the room.</p>
 <div style="border-left:1px solid #CF7A45;padding:4px 0 4px 20px;display:flex;flex-direction:column;gap:14px">
 <p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8">Do not impersonate another person, business, or venue.</p>
 <p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8">Do not harass, threaten, stalk, or sexually solicit anyone, and do not send sexual content to people who have not asked for it.</p>
 <p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8">Do not broadcast content that is illegal where you are, involves minors, incites violence, or advertises for sale what may not be sold.</p>
-<p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8">Do not use Locus to spam the Room channel, flood the mesh, or run automated broadcasting.</p>
+<p style="margin:0;font-size:16.5px;line-height:28px;color:#C4B9A8">Do not use Locus to spam the Room or broadcast automatically.</p>
 </div>
 </div>
 
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Blocking, reporting, and enforcement</h3>
 <div style="display:flex;flex-direction:column;gap:14px">
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You can block anyone instantly; blocking happens on your device and needs no network. You can report a card to us, and reports reach us when you have internet.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Our enforcement is limited by design, and you should know exactly how limited: we can remove a card from our backend and refuse to serve it again. We cannot delete anything from the mesh, from your device, or from anyone else's, because we never hold it. Blocking is the tool that always works.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You can block anyone instantly, and it works with no internet at all. You can also report a card to us, which reaches us once you are online.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">What we can do is limited, and you should know how limited: we can stop serving a card. We cannot delete anything from your phone or anyone else's, because we never hold it. Blocking is the tool that always works.</p>
 </div>
 </div>
 
@@ -687,25 +597,25 @@ img,svg{max-width:100%}
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">The software, as it is</h3>
 <div style="display:flex;flex-direction:column;gap:14px">
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Locus is provided as is, without warranty of any kind. Mesh delivery is best effort: messages may be delayed, duplicated, or never arrive, and range depends on phones, bodies, walls, and radio noise. Do not rely on Locus for anything urgent or safety-critical.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">To the maximum extent the law allows, we are not liable for indirect or consequential loss arising from your use of Locus, including messages that do not arrive and interactions with other people.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">Locus is provided as is, without warranty of any kind. Messages may be delayed, duplicated, or never arrive, and range depends on phones, walls and how crowded the room is. Do not rely on Locus for anything urgent.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">To the maximum extent the law allows, we are not liable for indirect loss arising from your use of Locus, including messages that do not arrive and interactions with other people.</p>
 </div>
 </div>
 
 <div>
-<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Licence and source</h3>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">The Locus app is licensed to you under the GNU General Public License version 3, and the corresponding source is published as that licence requires. Where these terms and the GPL-3.0 disagree about your rights to the software, the GPL-3.0 wins. The Locus name, mark, and contour artwork are ours and are not covered by that licence.</p>
+<h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Licence</h3>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">The Locus app is free to use. Where these terms and the app’s open-source licence disagree about your rights to the software, that licence wins. The Locus name and artwork are ours.</p>
 </div>
 
 <div>
 <h3 style="margin:0 0 16px;font-family:Archivo,sans-serif;font-size:27px;font-weight:600;letter-spacing:-.02em">Changes and ending this</h3>
 <div style="display:flex;flex-direction:column;gap:14px">
 <p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">We may update these terms as the app changes and will note the date above. Continuing to use Locus after a change means you accept it.</p>
-<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You end this agreement by uninstalling the app, which also destroys your key and your local data. We may stop serving the online layer to a card that breaks these terms.</p>
+<p style="margin:0;font-size:17px;line-height:1.706;color:#C4B9A8">You end this agreement by uninstalling the app, which also deletes everything Locus kept on your phone. We may stop serving a card that breaks these terms.</p>
 </div>
 </div>
 
-<div style="border-top:1px solid #222C27;padding-top:28px;font-size:16px;line-height:1.625;color:#9AA79F">Questions: <a href="mailto:hello@goapps.store">hello@goapps.store</a> · See also the <a href="#privacy" onclick="go('privacy')">privacy policy</a>.</div>
+<div style="border-top:1px solid #222C27;padding-top:28px;font-size:16px;line-height:1.625;color:#9AA79F">Questions: <a href="mailto:hello@goapps.store">hello@goapps.store</a> · See also the <a href="https://goapps.store/locus-privacy.html">privacy policy</a>.</div>
 </div>
 </div>
 
@@ -723,19 +633,18 @@ img,svg{max-width:100%}
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em">
 <span style="color:#7C877E">APP</span>
-<button onclick="go('home')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv11">THE APP</button>
-<button onclick="go('get')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv12">GET LOCUS</button>
-<button onclick="go('venues')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv13">FOR VENUES</button>
+<button onclick="go('home')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv12">THE APP</button>
+<button onclick="go('get')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv13">GET LOCUS</button>
+<button onclick="go('venues')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv14">FOR VENUES</button>
 </div>
 <div style="display:flex;flex-direction:column;gap:12px;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em">
 <span style="color:#7C877E">THE FINE PRINT</span>
-<button onclick="go('privacy')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv14">PRIVACY POLICY</button>
-<button onclick="go('terms')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv15">TERMS OF USE</button>
-<a href="/locus-privacy.html" style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C;text-align:left" class="hv15">FULL PRIVACY POLICY</a>
-<a href="/locus-child-safety.html" style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C;text-align:left" class="hv15">CHILD SAFETY STANDARDS</a>
-<a href="/locus-delete.html" style="font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C;text-align:left" class="hv15">DELETE MY DATA</a>
-<a href="mailto:hello@goapps.store" style="color:#8A958C" class="hv16">HELLO@GOAPPS.STORE</a>
-<a href="https://play.google.com/store/apps/details?id=com.goapps.locus" style="color:#8A958C" class="hv17">GOOGLE PLAY</a>
+<a href="https://goapps.store/locus-privacy.html" style="color:#8A958C" class="hv15">PRIVACY POLICY</a>
+<a href="https://goapps.store/locus-child-safety.html" style="color:#8A958C" class="hv15">CHILD SAFETY</a>
+<a href="https://goapps.store/locus-delete.html" style="color:#8A958C" class="hv15">DELETE MY DATA</a>
+<button onclick="go('terms')" style="background:none;border:none;padding:0;text-align:left;cursor:pointer;font-family:'Azeret Mono',monospace;font-size:11px;letter-spacing:.1em;color:#8A958C" class="hv16">TERMS OF USE</button>
+<a href="mailto:hello@goapps.store" style="color:#8A958C" class="hv17">HELLO@GOAPPS.STORE</a>
+<a href="https://play.google.com/store/apps/details?id=com.goapps.locus" style="color:#8A958C" class="hv18">GOOGLE PLAY</a>
 </div>
 </div>
 <div style="max-width:1260px;max-width:100%;margin:0 auto;padding:0 40px 44px;font-family:'Azeret Mono',monospace;font-size:10px;letter-spacing:.14em;color:#7C877E">LOCUS · 18+ · NO ACCOUNT, NO PHONE NUMBER, NO EMAIL</div>
