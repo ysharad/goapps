@@ -35,5 +35,3 @@ Builds from the paper & brass release read every format from the same `mode`:
   blank = that format loads straight from GAM; app-open never bids (no Prebid format)
 - `prebid.status_endpoint` — PSP health URL; blank keeps the SDK default
 
-Older installs (v1.2.1 and earlier) only read the plain `banner_unit` /
-`interstitial_unit` / `app_open_unit` keys, which stay on test units here.
