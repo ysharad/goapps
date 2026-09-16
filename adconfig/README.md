@@ -21,3 +21,19 @@ All files currently point at Google's and Prebid's public TEST ids.
 To go live for an app: create the AdMob/GAM unit, edit that app's JSON, done.
 (The AdMob APPLICATION_ID in each app's manifest is the only thing that
 still requires an app release to change.)
+
+## astrovaani.json (PanditVaani) — all formats, Locus ladder
+Builds from the paper & brass release read every format from the same `mode`:
+- `"admob"` → `banner_unit`, `interstitial_unit`, `app_open_unit`, `rewarded_unit`
+- `"gam"`/`"prebid"` → `gam_banner_unit`, `gam_interstitial_unit`,
+  `gam_app_open_unit`, `gam_rewarded_unit` (the rewarded unit is a
+  **rewarded interstitial**)
+- `*_enabled` — per-format switches (`rewarded_enabled: false` also turns the chat gate off)
+- `chat_free_questions` — chat questions per day before the rewarded gate (0 = never gate)
+- `chat_unlock_questions` — questions opened per rewarded video (the waiting question is extra)
+- `prebid.banner_config_id` / `interstitial_config_id` / `rewarded_config_id` —
+  blank = that format loads straight from GAM; app-open never bids (no Prebid format)
+- `prebid.status_endpoint` — PSP health URL; blank keeps the SDK default
+
+Older installs (v1.2.1 and earlier) only read the plain `banner_unit` /
+`interstitial_unit` / `app_open_unit` keys, which stay on test units here.

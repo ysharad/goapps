@@ -1,10 +1,29 @@
 {
   "ads_enabled": true,
+  "mode": "gam",
   "banner_enabled": true,
   "interstitial_enabled": true,
   "app_open_enabled": true,
+  "rewarded_enabled": true,
   "banner_unit": "ca-app-pub-3940256099942544/6300978111",
   "interstitial_unit": "ca-app-pub-3940256099942544/1033173712",
   "app_open_unit": "ca-app-pub-3940256099942544/9257395921",
-  "interstitial_min_gap_sec": 180
+  "rewarded_unit": "ca-app-pub-3940256099942544/5354046379",
+  "gam_banner_unit": "/22128176844/astrovaani_banner_320x50",
+  "gam_interstitial_unit": "/22128176844/astrovaani_interstitial",
+  "gam_app_open_unit": "/22128176844/astrovaani_app_open",
+  "gam_rewarded_unit": "/22128176844/astrovaani_chat_rewarded_interstitial",
+  "interstitial_min_gap_sec": 180,
+  "chat_free_questions": 5,
+  "chat_unlock_questions": 5,
+  "prebid": {
+    "server_url": "https://prebid-server-test-j.prebid.org/openrtb2/auction",
+    "account_id": "0689a263-318d-448b-a3d4-b02e8a709d9d",
+    "status_endpoint": "",
+    "banner_config_id": "",
+    "interstitial_config_id": "",
+    "rewarded_config_id": "",
+    "width": 320,
+    "height": 50
+  }
 }
