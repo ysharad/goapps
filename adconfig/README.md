@@ -22,7 +22,7 @@ To go live for an app: create the AdMob/GAM unit, edit that app's JSON, done.
 (The AdMob APPLICATION_ID in each app's manifest is the only thing that
 still requires an app release to change.)
 
-## astrovaani.json (PanditVaani) — all formats, Locus ladder
+## panditvaani.json (PanditVaani, package com.goapps.astrovaani) — all formats, Locus ladder
 Builds from the paper & brass release read every format from the same `mode`:
 - `"admob"` → `banner_unit`, `interstitial_unit`, `app_open_unit`, `rewarded_unit`
 - `"gam"`/`"prebid"` → `gam_banner_unit`, `gam_interstitial_unit`,
