@@ -57,20 +57,20 @@
     <span class="badge">Account &amp; Data Deletion</span>
     <h1>Locus</h1>
     <p class="sub">Delete your Locus account and data · Package <code>com.goapps.locus</code><br>
-    Provided by Mags Apps (Sharad Yadav) · Last updated: 23 August 2026</p>
+    Provided by Mags Apps (Sharad Yadav) · Last updated: 22 November 2026</p>
   </header>
 
   <div class="card">
     <strong>In short</strong>
     <ul>
-      <li>You can <strong>erase everything from inside the app</strong> in a few taps — no email, no waiting.</li>
-      <li>To also remove the <strong>sign-in account</strong> (Google or phone number), email us and we'll delete it within 30 days.</li>
+      <li>In <strong>version 1.0.1 and later</strong>, you can <strong>erase everything and delete your account from inside the app</strong>. You need an internet connection.</li>
+      <li>On an <strong>earlier version</strong>, in-app deletion was incomplete. Update, or clear Locus’s storage in Android settings and email us; we'll delete the online copy within 30 days.</li>
       <li>Your chats live on your phone. Deleting the app's data removes them permanently — we can't recover them, because we never had the keys.</li>
     </ul>
   </div>
 
   <h2>Option 1 — Delete everything from inside the app</h2>
-  <p>This is the fastest route and removes both what is on your phone and what is stored in the cloud.</p>
+  <p>On version 1.0.1 and later this removes what is on your phone and what is stored online for your account.</p>
   <ol>
     <li>Open <strong>Locus</strong>.</li>
     <li>Go to the <strong>You</strong> tab (bottom right).</li>
@@ -78,29 +78,29 @@
     <li>Tap <strong>Export or delete my data</strong>.</li>
     <li>Tap <strong>Delete everything</strong> and confirm.</li>
   </ol>
-  <p>The app returns to the first-run screen. This cannot be undone.</p>
+  <p>Locus closes, and starts from the first-run screen next time. This cannot be undone. Without a connection you can erase only the phone, then use Option 2 for the online copy.</p>
 
   <h2>Option 2 — Ask us to delete your account</h2>
-  <p>If you also want the sign-in account itself removed (the Google account or phone number you logged in with), or you no longer have the app installed:</p>
+  <p>If you are on an earlier version, erased only your phone, or no longer have the app installed:</p>
   <ul>
     <li>Email <strong><a href="mailto:hello@goapps.store?subject=Delete%20my%20Locus%20account">hello@goapps.store</a></strong> with the subject <strong>“Delete my Locus account”</strong>.</li>
-    <li>Send it from the email address you signed in with, or tell us the phone number you used, so we can identify the account.</li>
+    <li>Send it from the email address you signed in with, or tell us the phone number you used, so we can identify the account. If you never logged in, include the key shown on your You tab, if you still have it.</li>
     <li>We delete it within <strong>30 days</strong> and reply to confirm.</li>
   </ul>
 
   <hr class="divider">
 
   <h2>What is deleted, and what is kept</h2>
+  <p>For “Delete everything” in version 1.0.1 and later:</p>
   <table>
     <tr><th>Data</th><th>What happens</th></tr>
-    <tr><td>Your profile (name, age, bio, interests, glyph)</td><td>Deleted from your phone and from our servers, immediately</td></tr>
-    <tr><td>Your connections and swipe history</td><td>Deleted from your phone, immediately</td></tr>
-    <tr><td>Your chats</td><td>Deleted from your phone, immediately. They are end-to-end encrypted, so we never held readable copies</td></tr>
-    <tr><td>Undelivered messages waiting in the relay</td><td>Encrypted-only; deleted the moment they are delivered, and removed with your account on request</td></tr>
-    <tr><td>Your chat encryption key and notification token</td><td>Deleted with your profile</td></tr>
-    <tr><td>Your sign-in account (Google / phone)</td><td>Deleted within 30 days of an email request (Option 2)</td></tr>
-    <tr><td>Safety reports made about you by other users</td><td><strong>Kept for up to 12 months</strong> so we can act on abuse, then deleted. These contain the report reason and the identifiers involved, not your chats</td></tr>
-    <tr><td>Anonymised, aggregated statistics</td><td>May be kept indefinitely; these cannot identify you</td></tr>
+    <tr><td>Your profile (name, age, bio, interests, glyph)</td><td>Deleted from your phone and from our servers</td></tr>
+    <tr><td>Your connections, swipe history, chats and keys</td><td>Deleted from your phone</td></tr>
+    <tr><td>Your public chat key and notification token</td><td>Deleted from our servers</td></tr>
+    <tr><td>Encrypted messages waiting for you in the relay</td><td>Deleted. Messages you already sent stay until the recipient receives them</td></tr>
+    <tr><td>Your Locus sign-in account (anonymous, Google or phone)</td><td>Deleted. Your Google account itself is not affected</td></tr>
+    <tr><td>Safety reports made by you or about you</td><td><strong>Kept for up to 12 months</strong> so we can act on abuse, then deleted. These contain the report reason, the identifiers involved and the reported profile, not your chats</td></tr>
+    <tr><td>Analytics and advertising data held by Google</td><td>Kept under Google’s retention settings and policies. Locus’s app-instance identifier is reset on your phone</td></tr>
   </table>
 
   <p>Copies may persist briefly in encrypted backups after deletion and are overwritten in the normal backup cycle.</p>

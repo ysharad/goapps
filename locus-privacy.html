@@ -54,7 +54,7 @@
     <span class="badge">Privacy Policy</span>
     <h1>Locus</h1>
     <p class="sub">Discover and meet people at your event · Package <code>com.goapps.locus</code><br>
-    Provided by Mags Apps (Sharad Yadav) · For adults 18+ · Last updated: 16 August 2026</p>
+    Provided by Mags Apps (Sharad Yadav) · For adults 18+ · Last updated: 22 November 2026</p>
   </header>
 
   <div class="card tldr">
@@ -63,7 +63,8 @@
       <li>Locus helps you <strong>discover and connect with people around you at events</strong> — over Bluetooth, so it works even with patchy signal.</li>
       <li>You create a <strong>profile</strong> (a display name, your age, and a short bio). To make discovery work, <strong>that profile is shown to people near you</strong>.</li>
       <li>Locus is for <strong>adults (18+) only</strong>.</li>
-      <li>We use <strong>Google Firebase</strong> to store your profile and <strong>Anthropic</strong> to power optional AI icebreakers.</li>
+      <li>We use <strong>Google Firebase</strong> for your profile, account, optional message relay and usage analytics, and <strong>Anthropic</strong> for optional AI icebreakers.</li>
+      <li>Locus shows <strong>optional rewarded ads from Google</strong>. Google’s ads software uses your device’s advertising ID.</li>
       <li>We do <strong>not sell</strong> your data and we never share your <strong>precise GPS location</strong> with other users.</li>
       <li>You can <strong>edit or delete your profile, block and report others, and remove your data</strong> at any time.</li>
     </ul>
@@ -76,18 +77,20 @@
 
   <h2>2. The profile you create — and who can see it</h2>
   <p>When you set up Locus, you create a profile that may include a <strong>display name, your age, and a short bio</strong> (and any similar details you choose to add). Because Locus is a discovery app, <strong>your profile is shared with other Locus users who are near you</strong> — this is the core function of the app and is how people find each other.</p>
-  <p>Your profile is also stored in our backend (Google Firebase) so it stays consistent across your sessions and devices. Please only include information in your profile that you are comfortable showing to other people nearby. You can edit or remove this information at any time in the app.</p>
+  <p>When you are online, your profile, a public identity fingerprint, an account identifier and, unless you turn it off, a last-seen time are also stored in our backend (Google Firebase). A signed-in Locus user who has your fingerprint, which nearby devices receive, can look that record up; records cannot be browsed or searched. Please only include information in your profile that you are comfortable showing to other people nearby. You can edit or remove this information at any time in the app.</p>
 
   <h2>3. Finding people nearby</h2>
   <ul>
     <li><strong>Bluetooth proximity.</strong> Locus uses Bluetooth to detect other Locus users close to you and to exchange profiles device-to-device. On Android, the system may require location permission to scan for nearby Bluetooth devices; Locus uses this to find people near you, not to track your movements.</li>
-    <li><strong>Approximate area (optional area/event chat).</strong> If you use public area or event chat, Locus uses a <strong>coarse, approximate area (around neighborhood level)</strong> to group people in the same place. Locus does <strong>not</strong> collect or share your precise GPS coordinates with other users.</li>
+    <li><strong>Approximate area.</strong> If you use an area channel, Locus works out a coarse, neighborhood-level area to group people. Locus does <strong>not</strong> share your precise GPS coordinates with other users.</li>
+    <li><strong>Other mesh apps (version 1.0.1 and later).</strong> While scanning, Locus counts nearby devices running the bitchat mesh app and reports only whether it scanned and a range such as “2-3” to Google Analytics. It does not report those devices’ identifiers.</li>
   </ul>
 
   <h2>4. Likes, matches, and messages</h2>
   <ul>
     <li><strong>Likes are private.</strong> When you like someone, that interest is kept private (and encrypted) until it becomes <strong>mutual</strong> — only then do you and the other person become a match and can see each other as connected.</li>
-    <li><strong>Messages.</strong> Messages you send in a chat or an event room are shared with the people or room you send them to. Mesh messages are exchanged directly between devices near you.</li>
+    <li><strong>Messages.</strong> Messages you send in a chat or an event room are shared with the people or room you send them to. Mesh messages are exchanged between devices near you. Room messages are public to people in range and are not end-to-end encrypted.</li>
+    <li><strong>Keep your chats (optional relay).</strong> If you turn this on, private messages are also sent through Firebase, end-to-end encrypted. We cannot read the content, but the server holds the sender’s and recipient’s fingerprints, the sender’s display name and the time until the message is delivered and deleted. We also store your public chat key and a notification token.</li>
   </ul>
 
   <h2>5. AI icebreakers (optional)</h2>
@@ -95,11 +98,18 @@
 
   <h2>6. Your account</h2>
   <p>Locus signs you in with an <strong>anonymous account</strong> (Google Firebase Anonymous Authentication) that links your profile to you across sessions. We do <strong>not</strong> require your email address, phone number, or a password to use Locus.</p>
+  <p>If you choose to log in with <strong>Google</strong>, Firebase Authentication stores your Google account identifier, email address, name and profile photo link. If you choose to log in with a <strong>phone number</strong>, it stores that number, and Google processes it to send the code and prevent abuse. Neither is shown to other users.</p>
+  <h3>Usage analytics</h3>
+  <p>Locus uses <strong>Google Analytics for Firebase</strong>. It collects an app-instance identifier, device and app information, approximate region derived from your IP address, sessions and screen views, the advertising ID where available, and a few events: finishing setup, saving a profile, making a match and opening a chat. Events never contain messages, contacts or coordinates.</p>
+  <h3>Advertising</h3>
+  <p>Locus uses the <strong>Google Mobile Ads SDK (AdMob and Google Ad Manager)</strong> for optional rewarded ads. Google and its advertising partners may collect and share your advertising ID, IP address (which can indicate approximate location), device information and ad interactions to deliver and measure ads and prevent fraud. Ads may be personalised, depending on your settings and consent. You can reset or delete the advertising ID in Android settings and, where required, change your choice in Locus under “Ad privacy choices”. See <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">how Google uses data from apps that use its services</a>.</p>
 
   <h2>7. Where your data is stored, and third-party services</h2>
   <p>The following services process data on our behalf:</p>
   <ul>
-    <li><strong>Google Firebase</strong> — Anonymous Authentication, Cloud Firestore (stores your profile and related data), and Cloud Functions. See <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase privacy &amp; security</a> and the <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</li>
+    <li><strong>Google Firebase</strong> — Authentication, Cloud Firestore (profile and related data), Cloud Functions, Cloud Messaging, App Check with Play Integrity, and Analytics. Data may be processed outside India, including in the United States. See <a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Firebase privacy &amp; security</a> and the <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</li>
+    <li><strong>Google Mobile Ads and Google Play services</strong> — advertising, consent, QR scanning and app integrity, including related device and diagnostic data.</li>
+    <li><strong>GitHub Pages</strong> — serves an app configuration file and, like any web host, receives your IP address.</li>
     <li><strong>Anthropic, PBC</strong> — powers the optional AI icebreakers. See the <a href="https://www.anthropic.com/legal/privacy" rel="noopener" target="_blank">Anthropic Privacy Policy</a>.</li>
   </ul>
 
@@ -107,10 +117,11 @@
   <p>Your profile and related data are stored while you use Locus. You are in control of it:</p>
   <ul>
     <li>You can <strong>edit or clear your profile</strong> in the app at any time.</li>
+    <li><strong>Delete everything (version 1.0.1 and later)</strong> erases all app data on your phone and deletes your account, profile, notification token and messages waiting for you. It needs a connection to delete the online copy. In earlier versions it did not remove chats, keys, the account or all server data: update, or clear Locus’s storage in Android settings and email us.</li>
     <li>You can <strong>request deletion of your data</strong> by contacting us at the email below; we will delete your profile and associated data from our backend.</li>
-    <li><strong>Uninstalling</strong> Locus stops it from broadcasting your profile to nearby devices.</li>
+    <li><strong>Uninstalling</strong> Locus stops it from broadcasting your profile to nearby devices, but does not delete the online copy.</li>
   </ul>
-  <p>Reports you submit about other users are retained so we can keep the community safe.</p>
+  <p>Reports contain your identifiers, the reported person’s identifier and profile, and the reason. They are kept for up to 12 months so we can act on abuse.</p>
 
   <h2>9. Safety and security</h2>
   <ul>
@@ -122,7 +133,6 @@
   <ul>
     <li>We do not sell your data.</li>
     <li>We do not share your precise GPS location with other users.</li>
-    <li>We do not show third-party ads or use advertising-tracking SDKs.</li>
   </ul>
 
   <h2>11. Adults only</h2>
